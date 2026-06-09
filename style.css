@@ -2023,3 +2023,11 @@ left: -40px;
     text-align: center;
   }
 }
+@media (max-width: 380px){
+      .kyokan-list-wrap {
+        padding: 10px 0 20px 175px;
+      }
+      .hero {
+        min-height: 625px;
+      }
+}
