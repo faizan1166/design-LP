@@ -2094,6 +2094,9 @@ left: -40px;
 }
 
 @media (max-width: 430px){
+  free-cta-label-wrap {
+        left: -20px;
+  }
    .naze50dai-body p {
     font-size: 20px;
   }
