@@ -99,7 +99,7 @@ main,
   background: var(--cream);
   position: relative;
   /* min-height: 920px; */
-  padding: 200px 40px 60px 50px;
+  padding: 200px 40px 60px 90px;
   background-image: url("./assets/hero.png");
   background-size: cover;
   background-position: center;
@@ -534,8 +534,8 @@ main,
 .naze-ul {
   position: relative;
   display: inline;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='500' height='12' viewBox='0 0 500 12' preserveAspectRatio='none'%3E%3Cpath d='M2,5 C50,2 100,8 160,4 C220,1 280,8 340,4 C400,1 450,7 498,4 L498,9 C450,12 400,6 340,9 C280,12 220,5 160,9 C100,12 50,7 2,9 Z' fill='%23c98e8e'/%3E%3C/svg%3E");
-  background-size: 100% 8px;
+  background-image: url("./assets/Line.png");
+  background-size: 100% 3px;
   background-repeat: no-repeat;
   background-position: 0 100%;
   box-decoration-break: clone;
@@ -773,8 +773,8 @@ main,
 .s-ul {
   position: relative;
   display: inline;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='500' height='12' viewBox='0 0 500 12' preserveAspectRatio='none'%3E%3Cpath d='M2,5 C50,2 100,8 160,4 C220,1 280,8 340,4 C400,1 450,7 498,4 L498,9 C450,12 400,6 340,9 C280,12 220,5 160,9 C100,12 50,7 2,9 Z' fill='%23c98e8e'/%3E%3C/svg%3E");
-  background-size: 100% 8px;
+  background-image: url("./assets/Line.png");
+  background-size: 100% 3px;
   background-repeat: no-repeat;
   background-position: 0 100%;
   box-decoration-break: clone;
@@ -787,6 +787,7 @@ main,
   color: #B97A7A;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-weight: 600;
+  font-size: 28px;
   
   padding: 0 6px;
   display: inline;
@@ -994,8 +995,8 @@ main,
 
 .free-cta-label {
   display: inline-flex;
-  align-items: flex-end;
-  gap: 2px;
+  align-items: center;
+  gap: 5px;
   transform: rotate(-30deg);
   transform-origin: center bottom;
 }
@@ -1037,11 +1038,11 @@ main,
 .free-cta-dot::before {
   content: "";
   position: absolute;
-  top: -4px;
+  top: -1px;
   left: 50%;
   transform: translateX(-50%);
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
   background: var(--rose);
   border-radius: 50%;
 }
@@ -1378,6 +1379,14 @@ main,
 }
 
 @media (max-width: 900px) {
+  .free-cta-dot::before {
+        width: 6px;
+    height: 6px;
+    top: -2px;
+  }
+  .s-hl {
+    font-size: 20px;
+  }
   .s-ul {
     font-weight: 600;
   }
@@ -1401,12 +1410,16 @@ main,
     display: none;
   }
   .free-cta-heading-l2 {
+    font-size: 28px;
     line-height: 1.7;
     margin-top: -13px;
   }
 
   .sp-br {
     display: inline;
+  }
+   .sp-break {
+    display: inherit;
   }
   .sp-br-remove {
     display: none;
@@ -1632,7 +1645,7 @@ main,
 
   .kyokan-list-wrap {
     flex: 1;
-    padding: 30px;
+    padding: 30px 24px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1645,13 +1658,13 @@ main,
   }
 
   .kyokan-checklist li {
-    font-size: 13px;
+    font-size: 18px;
     font-weight: 600;
     color: var(--text);
     letter-spacing: 0.5px;
     line-height: 1.5;
     margin-bottom: 15px;
-    padding-left: 24px;
+    padding-left: 40px;
     position: relative;
   }
 
@@ -1659,9 +1672,10 @@ main,
     content: "";
     position: absolute;
     left: 0;
-    top: 2px;
-    width: 18px;
-    height: 18px;
+           top: 50%;
+        transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
     background-image: url("https://l-compass.site/wp-content/uploads/2026/06/CheckMark.svg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -1669,13 +1683,14 @@ main,
   }
 
   .kyokan-close {
-    font-size: 13px;
+    font-size: 18px;
     font-weight: 600;
     color: var(--text);
     letter-spacing: 0.5px;
     line-height: 1.6;
-    margin-top: 5px;
+    /* margin-top: 5px; */
     padding-left: 20px;
+    text-align: center;
   }
 
   .kyokan-body p {
@@ -1860,8 +1875,6 @@ main,
   }
   .soudan-frame {
     border-width: 4px;
-    border-left-width: 2px;
-    border-right-width: 2px;
   }
   .soudan-heading {
     font-size: 20px;
@@ -1977,7 +1990,7 @@ main,
   }
 
   .free-cta-inner {
-    padding: 40px 15px;
+    padding: 40px 10px 0;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -2009,7 +2022,7 @@ main,
   }
 
   .free-cta-label-text {
-    font-size: 20px;
+    font-size: 24px;
   }
 
   .free-cta-pin {
@@ -2018,14 +2031,14 @@ main,
   }
 
   .free-cta-heading {
-    font-size: 20px;
+    font-size: 28px;
     line-height: 1.4;
     margin-top: 35px;
     font-weight: 800;
   }
 
   .free-cta-num {
-    font-size: 32px;
+    font-size: 36px;
   }
 
   .free-cta-yen {
@@ -2057,7 +2070,7 @@ main,
   }
 
   .free-cta-body p {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.6;
     margin-bottom: 15px;
     padding: 0 60px;
@@ -2066,7 +2079,7 @@ main,
   }
   .free-cta-ul {
     font-weight: 800;
-    font-size: 16px;
+    font-size: 20px;
     /* background: rgba(201, 142, 142, 0.6); */
     padding: 0 2px;
   }
@@ -2210,6 +2223,9 @@ main,
 }
 
 @media (max-width: 600px) {
+    .free-cta-heading-l2 {
+    font-size: 24px;
+  }
   .kyokan {
     padding: 24px 25px 4px;
   }
@@ -2217,22 +2233,23 @@ main,
     margin: 0;
   }
   .free-cta-head.mb-p {
-    padding: 0;
+    padding: 0 20px;
   }
   .free-cta-label {
     transform: rotate(-6deg);
   }
   .free-cta-label-wrap {
-    left: 0;
+    left: 20px;
   }
   .free-cta-heading {
+            font-size: 24px;
     margin-top: 44px;
     margin-left: 10px;
   }
   .free-cta-body p {
     padding: 0;
     text-align: start;
-    padding-left: 10px !important;
+    padding-left: 30px !important;
   }
   .mb-lp {
     padding-left: 0 !important;
@@ -2246,7 +2263,7 @@ main,
     width: 150px;
     margin-top: 0;
     position: absolute;
-    bottom: 125px;
+    bottom: 90px;
     left: 15px;
     z-index: -1;
   }
@@ -2296,7 +2313,8 @@ main,
     margin: 0;
   }
   .kyokan-list-wrap {
-    padding: 30px;
+    padding: 30px 20px;
+;
   }
   .kyokan-heading {
     margin-left: 133px;
@@ -2308,7 +2326,7 @@ main,
 }
 @media (max-width: 380px) {
   .kyokan-list-wrap {
-    padding: 30px
+    padding: 24px 18px;
   }
   /* .hero {
         min-height: 625px;
