@@ -1300,7 +1300,7 @@ main,
   display: none;
 }
 .mb-none {
-  display: block;
+  display: inline;
 }
 
 @media (max-width: 1250px) {
@@ -1386,7 +1386,7 @@ main,
     gap: 10px;
   }
   .show-mobile {
-    display: block;
+    display: inline;
   }
   .mb-none {
     display: none;
