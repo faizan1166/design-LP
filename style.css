@@ -99,7 +99,7 @@ main,
   background: var(--cream);
   position: relative;
   /* min-height: 920px; */
-  padding: 200px 40px 60px 80px;
+  padding: 200px 40px 60px 50px;
   background-image: url("./assets/hero.png");
   background-size: cover;
   background-position: center;
@@ -223,8 +223,8 @@ main,
   left: 80px; */
   background: var(--cream-dark);
   box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
-  padding: 28px 34px;
-  max-width: 600px;
+  padding: 46px 34px;
+  max-width: 530px;
   z-index: 5;
   display: flex;
   justify-content: center;
@@ -304,6 +304,9 @@ main,
 
 .kyokan-inner {
   margin: 0 0 0 300px;
+      display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .kyokan-heading {
@@ -323,7 +326,7 @@ main,
 .kyokan-card-outer {
   position: relative;
   max-width: 800px;
-  margin: 0 auto 70px;
+  /* margin: 0 auto 70px; */
 }
 
 .kyokan-card-shadow {
@@ -408,8 +411,8 @@ main,
 
 .kyokan-list-wrap {
   flex: 1;
-  padding: 68px 71px 55px 186px;
-  margin-left: -140px;
+  padding: 70px;
+  /* margin-left: -140px; */
   position: relative;
   z-index: 2;
 }
@@ -492,8 +495,7 @@ main,
   position: relative;
   padding: 10px 40px 40px;
   border: 5px solid var(--rose);
-  background: url("https://l-compass.site/wp-content/uploads/2026/06/Grid.svg")
-    center/cover;
+  background: url("./assets/grid.svg") center/cover;
 }
 
 .naze50dai-frame {
@@ -730,10 +732,9 @@ main,
   width: 100%;
   height: 100%;
   border: 5px solid var(--rose);
-  border-left-width: 2px;
-  border-right-width: 2px;
-  background: url("https://l-compass.site/wp-content/uploads/2026/06/Grid-2.svg")
-    center/cover;
+  /* border-left-width: 2px;
+  border-right-width: 2px; */
+  background: url("./assets/grid.svg") center/cover;
   pointer-events: none;
 }
 
@@ -782,8 +783,11 @@ main,
 }
 
 .s-hl {
-  background: var(--rose);
-  color: #fff;
+  /* background: var(--rose); */
+  color: #B97A7A;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+  
   padding: 0 6px;
   display: inline;
 }
@@ -839,7 +843,7 @@ main,
   text-align: center;
   font-size: 24px;
   font-weight: 600;
-  color: var(--text);
+  color: #000;
   letter-spacing: 2.4px;
   line-height: 1.6;
   opacity: 0.7;
@@ -1095,7 +1099,9 @@ main,
 }
 
 .free-cta-ul {
+  font-family: "Hiragino Sans", sans-serif;
   font-weight: 600;
+  font-size: 24px;
   /* background: rgba(201, 142, 142, 0.6); */
   padding: 0 2px;
 }
@@ -1372,6 +1378,9 @@ main,
 }
 
 @media (max-width: 900px) {
+  .s-ul {
+    font-weight: 600;
+  }
   .email-wrapper {
     width: 100%;
   }
@@ -1568,6 +1577,7 @@ main,
   .kyokan-card-outer {
     width: 100%;
     margin-bottom: 40px;
+    max-width: 500px;
   }
 
   .kyokan-card-shadow {
@@ -1588,7 +1598,7 @@ main,
     display: flex;
     align-items: stretch;
     height: auto;
-    padding: 20px 12px 0 12px;
+    /* padding: 20px 12px 0 12px; */
     background: var(--cream-dark);
     border-radius: 20px;
     position: relative;
@@ -1622,7 +1632,7 @@ main,
 
   .kyokan-list-wrap {
     flex: 1;
-    padding: 10px 0 20px 195px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1799,8 +1809,8 @@ main,
   .chevron-mobile-container {
     display: flex;
     position: absolute;
-    bottom: 7px;
-    left: 25%;
+    bottom: -30px;
+    left: 23%;
     top: auto;
     z-index: 999;
     /* width: 100%; */
@@ -1820,6 +1830,7 @@ main,
     flex-direction: column;
     align-items: center;
     width: 100%;
+    margin-top: 40px;
   }
   .soudan-left {
     flex: none;
@@ -1970,7 +1981,7 @@ main,
     margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
   }
 
   .free-cta-head {
@@ -2055,6 +2066,7 @@ main,
   }
   .free-cta-ul {
     font-weight: 800;
+    font-size: 16px;
     /* background: rgba(201, 142, 142, 0.6); */
     padding: 0 2px;
   }
@@ -2193,7 +2205,7 @@ main,
     text-align: center;
   }
   .kyokan-inner {
-    margin: 0 0 0 160px;
+    margin: 0 0 0 250px;
   }
 }
 
@@ -2202,7 +2214,7 @@ main,
     padding: 24px 25px 4px;
   }
   .kyokan-inner {
-    margin: 0 0 0 160px;
+    margin: 0;
   }
   .free-cta-head.mb-p {
     padding: 0;
@@ -2284,7 +2296,7 @@ main,
     margin: 0;
   }
   .kyokan-list-wrap {
-    padding: 10px 0 20px 150px;
+    padding: 30px;
   }
   .kyokan-heading {
     margin-left: 133px;
@@ -2296,7 +2308,7 @@ main,
 }
 @media (max-width: 380px) {
   .kyokan-list-wrap {
-    padding: 10px 0 20px 150px;
+    padding: 30px
   }
   /* .hero {
         min-height: 625px;
